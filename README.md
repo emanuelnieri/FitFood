@@ -1,4 +1,4 @@
-# FitFood (estudo)
+# FitFood
 
 Estudando @MediaQuery, JS,
 <br >*Site com Rolagem
