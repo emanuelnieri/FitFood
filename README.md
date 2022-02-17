@@ -1,7 +1,7 @@
 # FitFood
 
 Estudando @MediaQuery, JS,
-<br >*Site com Rolagem
+<br >*Site com seta de Rolagem
 <br >*MediaQuery
 
 
