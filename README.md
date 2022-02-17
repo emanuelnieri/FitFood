@@ -1,4 +1,4 @@
-# FitFood (site imaginário)
+# FitFood (estudo)
 
 Estudando @MediaQuery, JS,
 <br >*Site com Rolagem
