@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+main.container-main {
+    background: linear-gradient(
+        240deg,
+        #3a0303,
+        #cc8484);
+}
+
+header.container-header {
+    width: auto;
+    height: 100vh;
+    background-image: url(../assets/background.jpeg);
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    max-width: 220px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 240px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1); 
+}
+
+h1.primary-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    color: white;
+}
+
+h2.secondary-text {
+    font-family: 'Bitter', serif;
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hold-info {
+    margin-top: 15vh;
+    margin-bottom: 40vh;
+}
+
+.presentation{
+    margin-top: 3vh;
+}
+
+.icons-link {
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    display: flex;
+    column-gap: 16px;
+}
+
+@media only screen and (min-height: 100vh) {
+    header.container-header {
+        object-fit: cover;
+        min-height: 100vh;
+        background-position: 25% 75%;
+    }
+
+    .hold-info {
+        margin-bottom: 36px;
+    }
+
+    header.container-header {
+        justify-content: center;
+    }
+}
+
+section.container-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+article.display-flex-row {
+    display: flex;
+    align-items:center;
+}
+
+div.info-especial {
+    margin: 0 36px;
+}
+
+ul.lista {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 16px;
+    list-style-type: square;
+}
+
+ul.lista li{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.food{
+    max-width: 220px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border-style: outset;
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+
+div.holdAnimation {
+    height: 100px;
+    position: relative;
+}
+
+a.down {
+    position: absolute;
+    animation: MoveUpDown 4s ease-in-out infinite;
+    transform: translate(-50%, 50%);
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      top: 0%;
+    }
+    50% {
+      top: 40%;
+    }
+}
+
+section.container-middle h1.primary-text {
+    font-size: 48px;
+}
+
+section.container-map { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+        240deg,
+        #000000,
+        #cc8484);
+}
+
+p.description-localizacao {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 24px;
+    width: 350px;
+    text-align: center;
+}
+
+div.info-localizacao  {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.map {
+    height: 60vh;
+    width: 99vw;
+    background-image: url(../assets/map.png);
+    background-size: auto;
+    background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+    img.img-responsive {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    ul.lista li{
+        font-size: 25px;
+    }
+
+    div.map {
+        background-size: 500%;
+        background-position: center;
+    }
+    
+}
