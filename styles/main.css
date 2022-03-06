@@ -1,48 +1,8 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+body, h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-}
-
-main.container-main {
-    background: linear-gradient(
-        240deg,
-        #3a0303,
-        #cc8484);
-}
-
-header.container-header {
-    width: auto;
-    height: 100vh;
-    background-image: url(../assets/background.jpeg);
-    background-size: auto;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo{
-    max-width: 220px;
-    max-height: 200px;
-    width: auto;
-    height: auto;
-    border-radius: 240px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 1); 
 }
 
 h1.primary-text {
@@ -55,6 +15,31 @@ h2.secondary-text {
     font-family: 'Bitter', serif;
     font-size: 38px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+main.container-main {
+    background: linear-gradient(
+        240deg,
+        #3a0303,
+        #cc8484);
+}
+
+header.container-header {
+    width: 100vw;
+    height: 100vh;
+    margin-left: -1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    max-width: 62vw;
+    max-height: 23vh;
+    width: auto;
+    height: auto;
+    border-radius: 240px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1); 
 }
 
 .display-flex-column {
@@ -75,25 +60,13 @@ h2.secondary-text {
 
 .icons-link {
     margin-top: 2vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     display: flex;
     column-gap: 16px;
 }
 
-@media only screen and (min-height: 100vh) {
-    header.container-header {
-        object-fit: cover;
-        min-height: 100vh;
-        background-position: 25% 75%;
-    }
-
-    .hold-info {
-        margin-bottom: 36px;
-    }
-
-    header.container-header {
-        justify-content: center;
-    }
+.icons{
+    
 }
 
 section.container-middle {
@@ -120,13 +93,13 @@ ul.lista {
 }
 
 ul.lista li{
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
 .food{
-    max-width: 220px;
-    max-height: 200px;
+    max-width: 30vw;
+    max-height: 30vh;
     width: auto;
     height: auto;
     border-radius: 50%;
@@ -192,24 +165,44 @@ div.map {
     height: 60vh;
     width: 99vw;
     background-image: url(../assets/map.png);
+    background-size: 150%;
     background-size: auto;
     background-position: center;
 }
 
-@media only screen and (max-width: 800px) {
-    img.img-responsive {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vw;
+@media only screen and (max-width: 500px){
+    h1.primary-text {
+        font-size: 12vw;
+    }
+
+    h2.secondary-text {
+        font-size: 7vw;
+    }
+
+    section.container-middle h1.primary-text {
+        font-size: 10vw;
     }
 
     ul.lista li{
-        font-size: 25px;
+        font-size: 5vw;
     }
 
-    div.map {
-        background-size: 500%;
-        background-position: center;
+    p.description-localizacao {
+        font-size: 3vw;
     }
-    
+
 }
+
+@media only screen and (max-height: 800px){
+    .icons-link {
+        margin-bottom: 5vh;
+    }
+}
+
+@media only screen and (max-height: 580px){
+    .icons-link {
+        margin-bottom: 0vh;
+    }
+}
+
+
