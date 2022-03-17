@@ -2,7 +2,7 @@
 
 Estudando @MediaQuery
 <br >*MediaQuery
-<br >*Javascript
+<br >*Seta de Rolagem
 
 
 
